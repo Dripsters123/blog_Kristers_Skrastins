@@ -11,13 +11,12 @@ class Database
     }
 
     // execute vai query
-    public function execute($query_string)
+    public function execute($query_string, $params)
     {
-
         // Sagatavot SQL izpildei
         $query = $this->pdo->prepare($query_string);
         // Izpildīt SQL
-        $query->execute();
+        $query->execute($params);
         // Atgriezt rezultātu!
         return $query;
     }
