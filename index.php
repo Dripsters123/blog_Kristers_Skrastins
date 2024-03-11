@@ -21,7 +21,8 @@ if (isset($_GET["id"]) && $_GET["id"] != "") {
 // Check if a category name is set in the GET parameters
 if (isset($_GET["category"]) && $_GET["category"] != "") {
     // If a category name is set, modify the query to select only the posts with that category
-    $category = $_GET["category"];
+    // trim nodzēš lieko uzrakstīto
+    $category = trim($_GET["category"]);
     $query .= " LEFT JOIN categories ON posts.category_id = categories.id WHERE categories.name = :category";
     $params = [":category" => $category];
 }
@@ -34,15 +35,27 @@ $posts = $db
     ->execute($query, $params)
     ->fetchAll();
 
-echo "Categories";
+
 echo "<form>";
-echo "<input name='category' />";
+echo "Categories";
+echo "<select name='category' >";
+echo "<option value='sport'>Sport</option>";
+echo "<option value='music'>Music</option>";
+echo "<option value='food'>Food</option>";
+echo "</select>";
 echo "<button>Submit</button>";
+echo "</form>";
+
+echo "<form>";
+// ternary operator
+//echo "<input name='category' value='" . (isset($_GET["category"]) ? $category : "") . "'  />";
+echo "<input name='category' value='" . ($_GET["category"] ?? '') . "'  />";
+echo "<button>Filter by category</button>";
 echo "</form>";
 
 // Display a form for the user to input an ID
 echo "<form>";
-echo "<input name='id' />";
+echo "<input name='id' value='" . ($_GET["id"] ?? '') . "'/>";
 echo "<button>Submit</button>";
 echo "</form>";
 
