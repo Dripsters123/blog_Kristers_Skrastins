@@ -7,8 +7,8 @@
 </form>
 
 <form>
-    <input name='category' value='<?= ($_GET["category"] ?? '') ?>' />;
-    <button>Filter by category</button>;
+    <input name='category' value='<?= ($_GET["category"] ?? '') ?>' />
+    <button>Filter by category</button>
 </form>
 
 <p>Categories</p>
