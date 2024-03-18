@@ -16,4 +16,5 @@
 // if (array_key_exists("age", $data2)) {
 //     echo $data2["age"];
 // }
+require "functions.php";
 require "router.php";

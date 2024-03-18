@@ -36,4 +36,4 @@ $posts = $db
     ->fetchAll();
 $title = "Posts";
 
-require "views/index.view.php";
+require "views/posts.view.php";
