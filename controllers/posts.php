@@ -1,6 +1,6 @@
 <?php
 // Include the necessary files for database and functions
-require "functions.php";
+
 require "Database.php";
 
 // Load the configuration for the database
