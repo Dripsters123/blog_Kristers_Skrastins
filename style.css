@@ -43,3 +43,6 @@ label{
     font-size: 0.8em;
 
 }
+.delete-form{
+    display: inline-block;
+}
