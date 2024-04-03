@@ -7,7 +7,7 @@ require "Database.php";
 $config = require("config.php");
 
 // Initialize the query to select all posts
-$query = "SELECT * FROM posts";
+$query = "SELECT posts.* FROM posts";
 $params = [];
 
 // Check if an ID is set in the GET parameters
