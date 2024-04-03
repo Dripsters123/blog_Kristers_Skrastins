@@ -9,13 +9,13 @@ nav {
     display: flex;
     
 }
-a {
-flex: 1;
+.same-class {
+    flex: 1;
     display: block;
     color: red;
     text-align: center;
     padding: 14px 16px;
-    font-size: 18px;
+    font-size: 25px;
     text-decoration: none;
 }
 ul {
@@ -45,4 +45,12 @@ label{
 }
 .delete-form{
     display: inline-block;
+}
+a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover{
+    color: blue;
 }

@@ -1,8 +1,8 @@
  <header>
      <nav>
-         <a href="/">Main posts</a>
-         <a href="about">About Us</a>
-         <a href="create">Create</a>
-         <a href="story">Dripstera lapa</a>
+         <a class="same-class" href="/">Main posts</a>
+         <a class="same-class" href="about">About Us</a>
+         <a class="same-class" href="create">Create</a>
+         <a class="same-class" href="story">Dripstera lapa</a>
      </nav>
  </header>
