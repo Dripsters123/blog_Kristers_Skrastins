@@ -17,6 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     die();
 };
 
-$title = "Mainīt bloga nosaukumu";
+$title = "Edit";
 
 require "views/posts/edit.view.php";

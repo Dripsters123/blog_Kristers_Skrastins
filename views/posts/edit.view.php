@@ -2,10 +2,7 @@
 <?php require "views/components/navbar.php" ?>
 
 
-<form method="POST">
-    <label>
-        <input name="title" value="<?= $_POST["title"] ?? "" ?>">
-    </label>
-</form>
+<h1>hello</h1>
+
 
 <?php require "views/components/footer.php" ?>
