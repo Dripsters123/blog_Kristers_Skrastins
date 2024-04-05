@@ -16,10 +16,8 @@ class Validator
     {
         $data = trim($data);
 
-        if (!is_int($data || strlen($data) < $min || strlen($data) > $max)) {
-            return false;
-        } else {
-            return true;
-        }
+        return is_numeric($data)
+            && strlen($data) >= $min
+            && strlen($data) <= $max;
     }
 }
