@@ -12,9 +12,9 @@
     </label>
     <label>Category ID:
         <select name="category-id">
-            <option value="1">sport</option>
-            <option value="2">music</option>
-            <option value="3">food</option>
+            <option value="1" <?= ($_POST["category-id"] ?? $post["category-id"]) == 1 ? "selected" : "" ?>>sport</option>
+            <option value="2" <?= ($_POST["category-id"] ?? $post["category-id"]) == 1 ? "selected" : "" ?>>music</option>
+            <option value="3" <?= ($_POST["category-id"] ?? $post["category-id"]) == 1 ? "selected" : "" ?>>food</option>
         </select>
         <?php if (isset($errors["category-id"])) { ?>
             <p class="invalid-data"><?= $errors["category-id"] ?></p>
