@@ -1,5 +1,5 @@
 <?php require "views/components/head.php" ?>
-<h1>Login</h1>
+<h1 style="text-align: center;">Login</h1>
 
 <form method="POST">
   <label>

@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (!Validator::number($_POST["category-id"], min: 1, max: 3)) {
-        $errors["category-id"] = "Category is invalid";
+        $errors["category_id"] = "Category is invalid";
     }
 
     if (empty($errors)) {
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $params = [
             ":title" => $_POST["title"],
-            ":category_id" => $_POST["category-id"],
+            ":category_id" => $_POST["category_id"],
             ":id" => $_POST["id"]
         ];
         $db->execute($query, $params);

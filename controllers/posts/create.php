@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $params = [
             ":title" => $_POST["title"],
-            ":category_id" => $_POST["category-id"]
+            ":category_id" => $_POST["category_id"]
         ];
         $db->execute($query, $params);
 
