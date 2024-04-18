@@ -1,6 +1,7 @@
 <?php require "views/components/head.php" ?>
 <?php require "views/components/navbar.php" ?>
 
+
 <form>
     <input name='id' value='<?= ($_GET["id"] ?? "") ?>' />
     <button>Submit</button>
